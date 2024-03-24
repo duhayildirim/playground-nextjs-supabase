@@ -4,42 +4,42 @@
       "id": "1",
       "title": "don't skip lunch",
       "description": "you miss your lunch break and forget to eat. Don't forget to eat.",
-      "status": "true",
-      "user_email": "jjacksparrow@gmail.com"
+      "status": "high priority",
+      "user_email": "jacksparrow@gmail.com"
     },
     {
       "id": "2",
       "title": "Complete project proposal",
       "description": "Finish drafting the project proposal and submit it before the deadline.",
-      "status": "false",
+      "status": "neutral",
       "user_email": "jonberntha@gmail.com"
     },
     {
       "id": "3",
       "title": "Call mom",
       "description": "Remember to call mom and wish her a happy birthday.",
-      "status": "false",
+      "status": "high priority",
       "user_email": "christianbale@gmail.com"
     },
     {
       "id": "4",
       "title": "Buy groceries",
       "description": "Stop by the grocery store on your way home and pick up essentials.",
-      "status": "false",
+      "status": "neutral",
       "user_email": "mattdamon@gmail.com"
     },
     {
       "id": "5",
       "title": "Go for a run",
       "description": "Take some time to go for a run and get some exercise.",
-      "status": "false",
+      "status": "neutral",
       "user_email": "cillianöurphy@gmail.com"
     },
     {
       "id": "6",
       "title": "Read a chapter of the book",
       "description": "Spend some time reading a chapter of the book you've been meaning to finish.",
-      "status": "false",
+      "status": "neutral",
       "user_email": "oppenheimer@gmail.com"
     }
   ]
