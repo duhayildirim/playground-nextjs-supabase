@@ -1,4 +1,197 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Base */
+body {
+  background: rgb(15,24,69);
+  background: radial-gradient(circle, rgba(15,24,69,1) 0%, rgba(0,0,0,1) 100%);
+  margin: 2rem;
+  font-size: 1.25rem;
+}
 
+h1, h2, h3 {
+  font-weight: bold;
+  color: #edf2f7;
+  font-size: 1.875rem;
+}
+
+main {
+  max-width: 87.5rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+main > h2 {
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+p > a {
+  color: #28292b;
+  text-decoration: underline;
+}
+
+/* Components */
+nav {
+  padding-bottom: 1rem;
+  border-bottom-width: 2px;
+  border-color: #e5e7eb;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 96rem;
+}
+
+nav a,
+nav span {
+  color: #fff;
+}
+
+nav a:hover {
+  color: #333030;
+}
+
+main nav {
+  border: none;
+}
+
+button {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 0.125rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+}
+
+button:hover {
+  background-color: rgba(59, 130, 246, 0.9);
+}
+
+.btn-primary {
+  background-color: #1f2937;
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: #e5e7eb;
+  color: #1f2937;
+}
+
+form {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+  background-color: rgba(59, 130, 246, 0.125);
+  border-radius: 0.375rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  width: 25%;
+}
+
+form label {
+  display: block;
+}
+
+form input,
+form textarea,
+form select {
+  display: block;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  border-radius: 0.125rem;
+  width: 100%;
+}
+
+form button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.error {
+  border-width: 0.125rem;
+  border-color: #ef4444;
+  background-color: #fecaca;
+  color: #991b1b;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 0.375rem;
+  display: block;
+  max-width: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.375rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.card h3 {
+  font-weight: bold;
+  color: #4b5563;
+  font-size: 1.125rem;
+  margin-bottom: 0;
+}
+
+.card p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #000;
+}
+
+.pill {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.5rem;
+}
+
+.normal {
+  background-color: #93c5fd;
+  color: #1e3a8a;
+}
+
+.acil {
+  background-color: #ef4444;
+  color: #fff;
+}
+
+.card .pill {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top-left-radius: 0.375rem;
+}
