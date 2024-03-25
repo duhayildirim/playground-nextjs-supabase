@@ -1,6 +1,6 @@
 import { Suspense } from "react";
 import TodoList from "./TodoList";
-import Loading from "./loading";
+import Loading from "../loading";
 
 export default function Todos() {
   return (

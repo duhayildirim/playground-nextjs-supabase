@@ -14,9 +14,13 @@ h3 {
   font-size: 1.875rem;
 }
 
+a {
+  text-decoration: none;
+}
+
 main {
   max-width: 87.5rem;
-  margin-top: 3rem;
+  margin-top: 0;
   margin-bottom: 3rem;
   margin-left: auto;
   margin-right: auto;
@@ -43,8 +47,8 @@ nav {
   display: flex;
   align-items: center;
   gap: 1.25rem;
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
   max-width: 96rem;
@@ -56,7 +60,7 @@ nav span {
 }
 
 nav a:hover {
-  color: #333030;
+  color: #242121;
 }
 
 main nav {
@@ -184,21 +188,19 @@ form button {
 .neutral {
   background-color: #93c5fd;
   color: #fff;
-  margin: 5px;
   font-size: 12px;
 }
 
 .high-priority {
   background-color: #ef4444;
   color: #fff;
-  margin: 5px;
   font-size: 12px;
 }
 
 .card .pill {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 3px;
+  right: 10px;
   border-top-left-radius: 0.375rem;
 }
 
