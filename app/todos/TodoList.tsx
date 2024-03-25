@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
 
 async function getTodos() {
@@ -26,9 +27,11 @@ export default async function TodoList() {
       {todos.length > 0 ? (
         todos.map((todo: any) => (
           <div key={todo.id} className={`card ${todo.status}`}>
-            <h3>{todo.title}</h3>
-            <p>{todo.description}</p>
-            <div className={`pill ${todo.status}`}>{todo.status}</div>
+            <Link href={`/todos/${todo.id}`}>
+              <h3>{todo.title}</h3>
+              <p>{todo.description}</p>
+              <div className={`pill ${todo.status}`}>{todo.status}</div>
+            </Link>
           </div>
         ))
       ) : (
