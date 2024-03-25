@@ -1,4 +1,6 @@
+import { Suspense } from "react";
 import TodoList from "./TodoList";
+import Loading from "./loading";
 
 export default function Todos() {
   return (
@@ -8,7 +10,9 @@ export default function Todos() {
           <h2>Todos:</h2>
         </div>
       </nav>
-      <TodoList />
+      <Suspense fallback={<Loading />}>
+        <TodoList />
+      </Suspense>
     </main>
   );
 }
