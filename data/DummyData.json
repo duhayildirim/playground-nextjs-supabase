@@ -1,5 +1,5 @@
 {
-  "todos":[
+  "todos": [
     {
       "id": "1",
       "title": "don't skip lunch",
@@ -41,6 +41,13 @@
       "description": "Spend some time reading a chapter of the book you've been meaning to finish.",
       "status": "neutral",
       "user_email": "oppenheimer@gmail.com"
+    },
+    {
+      "id": "1e42",
+      "title": "deneme",
+      "description": "deneme",
+      "status": "neutral",
+      "user_email": "example@gmail.com"
     }
   ]
 }
