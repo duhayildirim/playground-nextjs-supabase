@@ -1,12 +1,14 @@
 /* Base */
 body {
-  background: rgb(15,24,69);
-  background: radial-gradient(circle, rgba(15,24,69,1) 0%, rgba(0,0,0,1) 100%);
+  background: rgb(15, 24, 69);
+  background: radial-gradient(circle, rgba(15, 24, 69, 1) 0%, rgba(0, 0, 0, 1) 100%);
   margin: 2rem;
   font-size: 1.25rem;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: bold;
   color: #edf2f7;
   font-size: 1.875rem;
@@ -22,13 +24,13 @@ main {
   padding-right: 2rem;
 }
 
-main > h2 {
+main>h2 {
   margin-bottom: 1rem;
   padding-bottom: 0.5rem;
   font-size: 1rem;
 }
 
-p > a {
+p>a {
   color: #28292b;
   text-decoration: underline;
 }
@@ -160,7 +162,7 @@ form button {
 
 .card h3 {
   font-weight: bold;
-  color: #4b5563;
+  color: #ffffff;
   font-size: 1.125rem;
   margin-bottom: 0;
 }
@@ -179,14 +181,18 @@ form button {
   padding-left: 0.5rem;
 }
 
-.normal {
+.neutral {
   background-color: #93c5fd;
-  color: #1e3a8a;
+  color: #fff;
+  margin: 5px;
+  font-size: 12px;
 }
 
-.acil {
+.high-priority {
   background-color: #ef4444;
   color: #fff;
+  margin: 5px;
+  font-size: 12px;
 }
 
 .card .pill {

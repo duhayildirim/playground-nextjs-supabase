@@ -4,7 +4,7 @@
       "id": "1",
       "title": "don't skip lunch",
       "description": "you miss your lunch break and forget to eat. Don't forget to eat.",
-      "status": "high priority",
+      "status": "high-priority",
       "user_email": "jacksparrow@gmail.com"
     },
     {
@@ -18,7 +18,7 @@
       "id": "3",
       "title": "Call mom",
       "description": "Remember to call mom and wish her a happy birthday.",
-      "status": "high priority",
+      "status": "high-priority",
       "user_email": "christianbale@gmail.com"
     },
     {
@@ -33,7 +33,7 @@
       "title": "Go for a run",
       "description": "Take some time to go for a run and get some exercise.",
       "status": "neutral",
-      "user_email": "cillianöurphy@gmail.com"
+      "user_email": "cillianmurphy@gmail.com"
     },
     {
       "id": "6",
