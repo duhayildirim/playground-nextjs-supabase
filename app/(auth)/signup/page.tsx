@@ -1,6 +1,6 @@
 "use client";
 
-import { supabase } from "@/lib/supabase";
+import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
@@ -29,6 +29,8 @@ export default function Signup() {
     if (data.password !== data.passwordConfirm) {
       return console.log("passwords mismatched");
     }
+
+    const supabase = createClientComponentClient();
 
     try {
       const { data: dataUser, error } = await supabase.auth.signUp({
