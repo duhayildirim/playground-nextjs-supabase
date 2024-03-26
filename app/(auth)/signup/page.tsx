@@ -39,10 +39,10 @@ export default function Signup() {
       <div className="container mx-auto">
         <div className="grid gap-4">
           <div className="grid">
-            <label htmlFor="Email">Email</label>
+            <label htmlFor="email">Email</label>
             <input
               type="text"
-              name="Email"
+              name="email"
               value={data?.email}
               onChange={handleChange}
             />
