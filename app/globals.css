@@ -256,7 +256,7 @@ label {
   margin-bottom: 0.5em; 
 }
 
-input[type="text"],
+input,
 textarea,
 select {
   color: black; 
