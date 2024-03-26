@@ -1,10 +1,21 @@
+import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
 import Link from "next/link";
+import { cookies } from "next/headers";
+import { redirect } from "next/navigation";
 
-export default function AuthLayout({
+export default async function AuthLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+  const supabase = createServerComponentClient({ cookies });
+  const { data } = await supabase.auth.getSession();
+
+  if (data.session) {
+    redirect("/");
+  }
+
   return (
     <>
       <nav>
@@ -16,4 +27,3 @@ export default function AuthLayout({
     </>
   );
 }
-
