@@ -2,6 +2,17 @@ import { notFound } from "next/navigation";
 
 export const dynamicParams = true;
 
+export async function generateMetadata({ params }: any) {
+  const id = params.id;
+
+  const response = await fetch(`http://localhost:4000/todos/${id}`);
+  const todo = await response.json();
+
+  return {
+    title: `todo | ${todo.title}`,
+  };
+}
+
 export async function generateStaticParams() {
   const res = await fetch("http://localhost:4000/todos");
 
@@ -19,7 +30,7 @@ async function getTodo(id: number) {
     },
   });
 
-  if(!response.ok){
+  if (!response.ok) {
     notFound();
   }
 
