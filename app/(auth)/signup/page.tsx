@@ -1,5 +1,6 @@
-"use client"
+"use client";
 
+import { supabase } from "@/lib/supabase";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
@@ -25,12 +26,25 @@ export default function Signup() {
   };
 
   const handleSubmit = async () => {
-    const newUser = {
-      email: data.email,
-      password: data.password,
-    };
+    if (data.password !== data.passwordConfirm) {
+      return console.log("passwords mismatched");
+    }
 
-    console.log(newUser);
+    try {
+      const { data: dataUser, error } = await supabase.auth.signUp({
+        email: data.email,
+        password: data.password,
+        options: {
+          emailRedirectTo: `${location.origin}/api/auth/callback`,
+        },
+      });
+
+      if (dataUser) {
+        router.push("/login");
+      }
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (
